@@ -4,6 +4,67 @@
    =============================================== */
 
 /* ===============================================
+   Accessibility & Skip Link
+   =============================================== */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--teal-accent);
+    color: var(--white);
+    padding: 8px 16px;
+    z-index: 10000;
+    transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Hero Locations for Local SEO */
+.hero-locations {
+    margin-top: 16px;
+}
+
+.locations-text {
+    font-size: 0.875rem;
+    color: var(--light-text);
+    background: rgba(13, 148, 136, 0.1);
+    padding: 8px 16px;
+    border-radius: 20px;
+    display: inline-block;
+    border: 1px solid rgba(13, 148, 136, 0.2);
+}
+
+.locations-text strong {
+    color: var(--teal-accent);
+}
+
+/* Footer Service Areas */
+.footer-service-areas {
+    font-size: 0.8125rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 12px;
+    line-height: 1.5;
+}
+
+.footer-service-areas strong {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* ===============================================
    CSS Variables & Reset
    =============================================== */
 :root {
